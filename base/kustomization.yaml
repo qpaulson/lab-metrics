@@ -1,0 +1,17 @@
+helmCharts:
+- name: metrics-server
+  repo: https://kubernetes-sigs.github.io/metrics-server/
+  releaseName: metrics-server
+  version: 3.12.1
+  namespace: kube-system
+
+#  valuesInline:
+
+#configMapGenerator:
+#  - name: configMapName
+#    files:
+#      - config.metrics
+#    options:
+#      disableNameSuffixHash: true
+
+
