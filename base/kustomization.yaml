@@ -5,7 +5,10 @@ helmCharts:
   version: 3.12.1
   namespace: kube-system
 
-#  valuesInline:
+  valuesInline:
+    args:
+      - --kubelet-insecure-tls
+      - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
 
 #configMapGenerator:
 #  - name: configMapName
